@@ -1,0 +1,106 @@
+﻿@media screen and (min-width:800px) {
+    .logo {
+        display: flex;
+        min-width: 32px;
+        max-height: 8.2px;
+    }
+
+    .display {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .link {
+        display: flex;
+    }
+}
+
+header {
+    text-align: center;
+    font-size: large;
+}
+
+.logo {
+    width: 320px;
+    height: 82px;
+    object-fit:none;
+}
+
+.display {
+    justify-content: space-between;
+    aspect-ratio: auto;
+}
+
+.menu {
+    font-family: Cyberpunk;
+    font-size: 2vw;
+    align-items: center;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 24px;
+}
+
+    .menu li {
+        margin: 1vh;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: blue;
+    }
+
+
+body {
+    background-image: url(C:\Bureau\LOUP_TIVGAN_HTML_CSS_GR3\images\background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.critique {
+    display: flex;
+    font-family: Arial;
+    margin: 1vh;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 3vh;
+    list-style-type: none;
+    color: black;
+    backdrop-filter: blur(5em)
+}
+
+
+.link {
+    font-family: Cyberpunk;
+    font-size: 4vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    list-style-type: none;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 18px;
+    bottom: 0;
+}
+
+    .link li {
+        margin: 1vh;
+    }
+
+    .link a {
+        text-decoration: none;
+        color: blue;
+    }
+
+@media (min-width: 800px) {
+    body {
+        min-width: 800px;
+    }
+}

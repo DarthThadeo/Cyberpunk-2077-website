@@ -1,0 +1,134 @@
+﻿@media screen and (min-width:800px) {
+    .logo {
+        display: flex;
+        min-width: 32px;
+        max-height: 8.2px;
+    }
+
+    .display {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .link {
+        display: flex;
+    }
+}
+
+header {
+    text-align: center;
+    font-size: large;
+}
+
+.logo {
+    width: 320px;
+    height: 82px;
+    object-fit: cover;
+}
+
+.display {
+    justify-content: space-between;
+    aspect-ratio: auto;
+}
+
+.menu {
+    font-family: Cyberpunk;
+    font-size: 2vw;
+    align-items: center;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 24px;
+}
+
+    .menu li {
+        margin: 1vh;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: blue;
+    }
+body {
+    background-image: url(C:\Bureau\LOUP_TIVGAN_HTML_CSS_GR3\images\background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.container{
+    padding:2rem;
+}
+.slider-wrapper{
+    position:relative;
+    max-width:66rem;
+    margin:0 auto;
+}
+.slider{
+    display:flex;
+    aspect-ratio:16/9;
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior:smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    overflow:hidden;
+}
+.slider img{
+    flex:1 0 100%;
+    scroll-snap-align:start;
+}
+.slider-nav{
+    display:flex;
+    column-gap:1rem;
+    position:absolute;
+    bottom:1.25rem;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:1;
+}
+.slider-nav a{
+    width:0.5rem;
+    height:0.5rem;
+    border-radius:50%;
+    background-color:#fff;
+    opacity:0.66;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity:1;
+}
+
+.link {
+    font-family: Cyberpunk;
+    font-size: 4vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    list-style-type: none;
+    background: rgba(0,0,0,.6);
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 18px;
+    bottom: 0em;
+}
+
+    .link li {
+        margin: 1vh;
+    }
+
+    .link a {
+        text-decoration: none;
+        color: blue;
+    }
+
+@media (min-width: 800px) {
+    body {
+        min-width: 800px;
+    }
+}
